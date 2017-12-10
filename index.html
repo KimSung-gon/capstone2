@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<title>모스키토르찌</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.select {
+width: 200px;
+height: 30px;
+		padding-left: 10px;
+		font-size: 18px;
+color: #006fff;
+border: 1px solid #006fff;
+		border-radius: 3px;
+
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+<a href="#home" class="w3-bar-item w3-button"><b>모스키토르찌</b></a>
+<!-- Float links to the right. Hide them on small screens -->
+<div class="w3-right w3-hide-small">
+<a href="#home" class="w3-bar-item w3-button">Home</a>
+<a href="#model" class="w3-bar-item w3-button">Analyze_Model</a>
+<a href="#projects" class="w3-bar-item w3-button">Data</a>
+<a href="#about" class="w3-bar-item w3-button">About</a>
+<a href="#contact" class="w3-bar-item w3-button">Analyze</a>
+</div>
+</div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:100%;" id="home" align="center">
+<img class="w3-image" src="./아파트.jpg" alt="Architecture" width="1500" height="600">
+<div class="w3-display-middle w3-margin-top w3-center">
+<h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>서울 아파트 가격 예측 시스템</b></span> <span class="w3-hide-small w3-text-light-grey"></span></h1>
+</div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+<div class="w3-container w3-padding-32" id="model">
+<h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Analyze_Model : Random Forest</h2>
+
+<img src="./RandomForest.png" style="width:50%; height:500px" align="left">
+<h5><br> 랜덤포레스트의 경우 다양성을 극대화 하여 예측력이 상당히 우수한 편이고<br><br>
+배깅과 동일하게 붓트스트랩 표본을 이용한 다수의 트리의 예측 결과를 종합하여<br><br> 의사결정을 진행하기 때문에 안정성도 상당히 높다는 장점이 있습니다.<br><br> 하지만 랜덤포레스트 역시 다수의 트리를 이용한 의사결정 기법을 이용하기 때문에 <br><br>기존의 트리가 갖는 장점 중 하나인 설명력을 잃게 된다는 단점이 존재합니다.
+<hr><br>
+참고사이트<br><br>
+<a href="https://m.blog.naver.com/PostView.nhn?blogId=gksshdk8003&logNo=220914969026&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F">랜덤포레스트이론:네이버블로그</a><br>
+<a href="http://www.birc.co.kr/2017/02/06/%EC%95%99%EC%83%81%EB%B8%94ensemble-%EB%9E%9C%EB%8D%A4-%ED%8F%AC%EB%A0%88%EC%8A%A4%ED%8A%B8random-foetc/">앙상블-랜덤포레스트</a>
+</h5>
+</div>
+<!-- Project Section -->
+<div class="w3-container w3-padding-32" id="projects">
+<h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Data</h2>
+<br>
+<a href="./accuracy.py" target="top">Random Forest Code 다운로드(정확도)</a><br>
+<a href="./test.py" target="top">Random Forest Code 다운로드(영향요소)</a><br>
+<a href="./cap3_new.csv" target="top">통합 Data 다운로드(.csv)</a><br>
+</div>
+<br>
+<div class="w3-row-padding">
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+<div class="w3-display-topleft w3-black w3-padding">한은금리</div>
+<img src="./한은금리.jpg" alt="House" style="width:100%">
+</div>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+<div class="w3-display-topleft w3-black w3-padding">코스피</div>
+<img src="./코스피.jpg" alt="House" style="width:100%">
+</div>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+<div class="w3-display-topleft w3-black w3-padding">환율</div>
+<img src="./달러.jpg" alt="House" style="width:100%">
+</div>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+<div class="w3-display-topleft w3-black w3-padding">GDP</div>
+<img src="./gdp.jpg" alt="House" style="width:100%">
+</div>
+</div>
+</div>
+
+
+<!-- About Section -->
+<div class="w3-container w3-padding-32" id="about">
+<h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h2><br>
+<h5> 저희 팀명은 모스키토르찌이고 팀원은 김성곤, 이식 두명으로 이루어져 있습니다.
+<br><br>팀명은 소프트웨어융합 최신기술 수업에서 진행하는 프로젝트의 모기수 예측 프로젝트를 처음에 그대로 사용하려고 모스키토를 따왔고<br>이식 학생의 이름과 유사한 외국인 학생 히식도르찌에서 도르찌를 가져와서 모스키토르찌라고 지었습니다.
+<br><br>모기수 예측 시스템을 그대로 사용하는 것은 캡스톤 취지에 조금 벗어난다고 생각하여 예측 모델을 부동산 가격으로 바꾸었다가 데이터가 많이 부족하다고<br> 판단하여 서울 아파트 가격으로 바꾸게 되었습니다.
+<br><br>저희는 한국은행 기준금리, 국내총생산, 토지거래현황, 표준공시지가, 연평균임금, 최저임금, 소비자물가, 대미환율, 주가 등 20가지가 넘는 지표를 통해<br>아파트 가격을 예측하는 시스템을 만들려고 하였지만 이 역시 2017년 데이터 부족으로 인해 아파트 가격에 영향을 미치는 요소를 알아보는 프로젝트를 만들었습니다.
+</h5>
+</div>
+
+</div>																																																																																										  <div class="w3-row-padding">
+
+<img src="./team.jpg" style="transform:rotate(180deg); max-width:40%; height:auto" align="left">
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<br><br><br>																																																																																	        <h3>이식(좌)</h3>
+<p class="w3-opacity">팀원</p>
+<p><button class="w3-button w3-light-grey w3-block">tlrdl1135@naver.com<br>010-2883-1135</button></p>
+</div>
+
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<br><br><br>																																																																						      <h3>김성곤(우)</h3>
+<p class="w3-opacity">팀원</p>
+<p><button class="w3-button w3-light-grey w3-block">gonni27@naver.com<br>010-8837-1304</button></p>
+</div>																																																																																																				    
+</div>
+<div class="w3-container w3-padding-32" id="contact" >
+
+<h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Analyze</h2><p>weight를 주는 것에 대한 부분이 명확하지 않아 전체, 가장영향력있는3개 제외, 오일, 주가에 대하여 분석</p>
+<script language="JavaScript">
+var dataSet = new Array();
+
+dataSet['데이터셋'] = 'all,exceptBig3,stockPrice,oil';
+
+function datachange() 
+{
+	var f = document.ftest;
+	var selectPic = document.getElementById("dataPicture").value;
+	
+	var str = '<img src="./' + selectPic + '.png" style="width:60%; height:500px">'
+	if (selectPic == "DataSet") {} else{
+
+	var str = '<img src="./' + selectPic + '.png" style="width:40%; height:500px" align="left">'
+	str += '<img src="./final_' + selectPic + '.png" style="width:55%; height:500px" align="right">'
+	}
+	document.getElementById("inHere").innerHTML = str;
+	
+}
+
+
+function dataview()
+{
+	var f = document.ftest;
+
+	f.data.options.length = 1;
+	f.data.options[0].text = "DataSet";
+	dataSplit = dataSet["데이터셋"].split(",");
+	f.data.options.length = dataSplit.length+1;
+	for (i=0; i<dataSplit.length; i++) {
+		f.data.options[i+1].value = dataSplit[i];
+		f.data.options[i+1].text = dataSplit[i];
+	}
+}
+//-->
+</script>
+<form id="test1" name=ftest method=get>
+<select id="dataPicture" name="data" onchange="datachange()"></select>
+
+</form>
+
+<script language="JavaScript">
+<!--
+dataview();
+//-->
+</script>
+
+<div id="inHere" align="center">
+<img src="./DataSet.png" style="width:60%; height:500px">
+</div>
+</div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDinGlwhPLcKqC6fTq9KCFOtWGEZc8awfQ&callback=myMap"> </script>
+<br><br>
+<div id="map1" style="width:100%; height:450px;"></div>
+<script>
+function initMap() {
+	var uluru = {lat: 37.5507, lng: 126.9917}; 
+	var map = new google.maps.Map(document.getElementById('map1'),
+			{ zoom: 11, center: uluru, scrollwheel: true, draggable: true, mapTypeId:google.maps.MapTypeId.ROADMAP }); 
+	var marker = new google.maps.Marker({ position: uluru, map: map }); }
+	</script>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDinGlwhPLcKqC6fTq9KCFOtWGEZc8awfQ&callback=initMap"> </script>
+	</body>
+	</html>
+
